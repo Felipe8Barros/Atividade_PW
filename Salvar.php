@@ -13,8 +13,6 @@ $sqlinsert = "insert into tb_jogos (nome_jg, desenvolvedor_jg, categoria_jg, loj
     if($resp)
     {
         header("location: Mostrar.php");
-        // echo " Cadastro Finalizado!";
-        // mysqli_close($con);
     }
     else 
     {   
