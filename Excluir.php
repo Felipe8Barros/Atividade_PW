@@ -10,7 +10,7 @@ else
 {
     echo "Informe o ID do usuário a ser apagado";
     echo "Exemplo: ";
-    echo 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?id=2';
+    echo 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?id=1';
     echo '<a href="' . $link . '">' . $link . '</a>';
     exit();
 }
