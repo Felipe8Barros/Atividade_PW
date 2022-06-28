@@ -7,6 +7,4 @@ define ("banco", "games");
 
 $con = mysqli_connect(servidor, usuario, senha, banco);
 
-// echo "VAI TRICOLOR, AMASSA O PALMERA!";
-
 ?>
