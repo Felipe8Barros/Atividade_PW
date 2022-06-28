@@ -13,28 +13,29 @@ $resp = mysqli_query($con, $sqlselect);
 <table class="table table-striped table-hover table-dark">
     <thead>
       <tr>
-        <th>Nome</th>
-        <th>Desenvolver</th>
-        <th>Categoria</th>
-        <th>Loja</th>
-        <th>Console</th>
+        <th><center>Nome</center></th>
+        <th><center>Desenvolver</center></th>
+        <th><center>Categoria</center></th>
+        <th><center>Loja<center></th>
+        <th><center>Console</center></th>
+        <th><center></center></th>
       </tr>
     </thead>
     <tbody>
     <?php 
         while($linha = mysqli_fetch_assoc($resp)) { ?>
             <tr>
-                <td> <?php echo $linha['nome_jg'] ?> </td>
-                <td> <?php echo $linha['desenvolvedor_jg'] ?> </td>
-                <td> <?php echo $linha['categoria_jg'] ?> </td>
-                <td> <?php echo $linha['loja_jg'] ?> </td>
-                <td> <?php echo $linha['console_jg'] ?> </td>
-                <td> 
+                <td><center> <?php echo $linha['nome_jg'] ?> </center></td>
+                <td><center> <?php echo $linha['desenvolvedor_jg'] ?> <center></td>
+                <td><center> <?php echo $linha['categoria_jg'] ?> </center></td>
+                <td><center> <?php echo $linha['loja_jg'] ?> </center></td>
+                <td><center> <?php echo $linha['console_jg'] ?> </center></td>
+                <td><center> 
                   <form action="Excluir.php" method="POST">
-                      <input type="hidden" name="id" value="<?php echo $linha['id_jg']?>" />
-                        <input type="submit" value="excluir" class="btn btn-danger"/>
+                      <input type="hidden" name="id" value="<?php echo $linha['id_jg']?>"/>
+                        <input type="submit" value="Excluir" class="btn btn-danger"/>
                   </form> 
-                </td>
+                </center></td>
             </tr>
     <?php } ?>    
     </tbody>
